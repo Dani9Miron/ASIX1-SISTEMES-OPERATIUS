@@ -12,6 +12,12 @@ Instalacio
 <img width="1268" height="776" alt="image" src="https://github.com/user-attachments/assets/eebe2a69-365f-49fd-a876-8d5413748f36" />
 <img width="1007" height="679" alt="image" src="https://github.com/user-attachments/assets/039ed4ce-3a38-4fd7-9d5e-c5ac45cb330c" />
 <img width="1263" height="779" alt="image" src="https://github.com/user-attachments/assets/07bada91-e6c3-44e8-bc5d-e4cc41bf4d15" />
+<img width="709" height="322" alt="image" src="https://github.com/user-attachments/assets/6e3253ec-3928-429a-bc02-532d0613645d" />
+cliquem la c
+<img width="1012" height="764" alt="image" src="https://github.com/user-attachments/assets/4afcc086-9204-4316-806c-05a4236970d8" />
+<img width="1006" height="740" alt="image" src="https://github.com/user-attachments/assets/92679e1c-61c0-4389-81ac-a9aca3060dbd" />
+<img width="727" height="540" alt="image" src="https://github.com/user-attachments/assets/d6ff3ea1-6348-46aa-9c74-1635c8994321" />
+<img width="728" height="529" alt="image" src="https://github.com/user-attachments/assets/10cb7584-cc3b-4c48-ae7b-69793fccb183" />
 
 
 Timeshift
