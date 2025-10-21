@@ -91,7 +91,9 @@ Configurar el sistema perquè només el paquet redis-server s’instal·li des d
 <img width="634" height="399" alt="image" src="https://github.com/user-attachments/assets/552aa7be-20c2-48b9-bdac-9eebe8ebba98" />
 -Creem les prefèrencies d'APT
 <img width="621" height="247" alt="image" src="https://github.com/user-attachments/assets/c780fa5a-8c3d-4618-8a77-1f447f1c9ba8" />
+-Verifiquem
 <img width="637" height="389" alt="image" src="https://github.com/user-attachments/assets/a379e202-ef47-40d1-b4e8-0dc1813697db" />
+-Instal·lem el paquet
 <img width="629" height="356" alt="image" src="https://github.com/user-attachments/assets/23d0417c-3c11-402f-b271-579d7b199620" />
 
 
