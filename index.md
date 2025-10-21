@@ -21,7 +21,7 @@ L’objectiu és mostrar els coneixements i les pràctiques relacionades amb la 
 
 Autor: Dani Miron
 
-### [Sprint 1. ](unidad1/Sprint1.md)  
+### [Sprint 1. ](Sprint1.md)  
 ### [Sprint_2. ](unidad2/unidad2.md)  
 ### [Sprint 3. ](unidad3/unidad3.md)  
 ### [Sprint 4. ](unidad4/unidad4.md)  
