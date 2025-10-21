@@ -1,4 +1,4 @@
-theme: theme: jekyll-theme-chirpy
+theme:  jekyll-theme-chirpy
 
 sass:
   style: compressed
