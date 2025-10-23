@@ -30,15 +30,18 @@ e4defrag -c /dev/sda2 (consulta)
 
 e4defrag /dev/sda2 (desfragmentació)
 
-
   -Gestio Particions
       -Gparted
       <img width="777" height="533" alt="image" src="https://github.com/user-attachments/assets/bf11066c-4c38-42f7-aaca-b689f2a4e981" />
-      
-
-      
-     -Comandes
-      <img width="833" height="384" alt="image" src="https://github.com/user-attachments/assets/15002eca-dcdd-44db-8b11-77aaea4aeeb5" />
+     
+  -Comandes
+<img width="833" height="384" alt="image" src="https://github.com/user-attachments/assets/15002eca-dcdd-44db-8b11-77aaea4aeeb5" />
+<img width="785" height="318" alt="image" src="https://github.com/user-attachments/assets/c0147d32-b5f8-465d-a37d-4bc1089332c2" />
+<img width="581" height="216" alt="image" src="https://github.com/user-attachments/assets/849f504a-3e55-4f77-bf57-879fd5005709" />
+<img width="829" height="233" alt="image" src="https://github.com/user-attachments/assets/d891bbd3-932f-4364-9ba4-ceb92e29f16b" />
+<img width="597" height="79" alt="image" src="https://github.com/user-attachments/assets/5ab8bd4e-17e1-4f27-af2c-03297075113c" />
+<img width="729" height="131" alt="image" src="https://github.com/user-attachments/assets/c5019674-8729-405d-9369-666a57570734" />
+<img width="941" height="534" alt="image" src="https://github.com/user-attachments/assets/e75b96e0-43e5-4275-a56a-758c3ed64cc4" />
 
 
 
