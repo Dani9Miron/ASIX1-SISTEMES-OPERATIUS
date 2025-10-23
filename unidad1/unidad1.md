@@ -4,7 +4,7 @@ title: "Sprint.1"
 ---
 
 
-##1.Instalacio
+## 1.Instalacio Ubuntu i WIndows
 
 <img width="871" height="476" alt="image" src="https://github.com/user-attachments/assets/4cf4c94f-9ed6-47f8-a00b-ef20865bcfcf" />
 <img width="1269" height="777" alt="image" src="https://github.com/user-attachments/assets/f66e46f2-e0f3-4760-ab2c-4b47ae143818" />
@@ -28,7 +28,8 @@ cliquem la c
 <img width="728" height="529" alt="image" src="https://github.com/user-attachments/assets/10cb7584-cc3b-4c48-ae7b-69793fccb183" />
 
 
-##2.Timeshift
+## 2.Punts de Restauració
+Contingut Timeshift és una eina molt útil en entorns Linux que permet crear còpies de seguretat del sistema mitjançant la creació de instantànies (snapshots). Aquestes instantànies permeten als usuaris restaurar l'estat del sistema a un punt anterior en cas de problemes, com ara fallades del sistema, errors durant actualitzacions, o configuracions incorrectes. Timeshift està dissenyat per centrar-se en la restauració del sistema, no dels arxius personals, tot i que també pots configurar-lo per incloure'ls.
 
 <img width="572" height="25" alt="image" src="https://github.com/user-attachments/assets/2b1047b6-430c-41c0-ad46-cfbbf624228e" />
 <img width="585" height="169" alt="image" src="https://github.com/user-attachments/assets/a5bde449-4987-405b-8a8e-d34201c830d3" />
@@ -46,7 +47,7 @@ cliquem la c
 <img width="496" height="580" alt="image" src="https://github.com/user-attachments/assets/f9055f86-78bf-41fc-9a2a-e7c19575b46e" />
 <img width="586" height="76" alt="image" src="https://github.com/user-attachments/assets/683c5bdf-9423-49b4-8c28-633d7eb5de4a" />
 
-##3. LLlicència
+## 3. LLlicència
 -CC(Creative Commons): Contingut digital
 
 -El Programari Lliure: (en anglès, Free Software) es refereix a qualsevol tipus de programari que respecta la llibertat dels usuaris i les comunitats per executar-lo, estudiar-lo, modificar-lo i redistribuir-lo. El terme va ser encunyat per Richard Stallman el 1983 en el marc del projecte GNU i s'ha convertit en un moviment tecnològic i social.
@@ -62,14 +63,14 @@ Les quatre llibertats fonamentals del Programari Lliure són:
 -Llibertat de millorar el programa
 
 
-##4.XARXA
+## 4.XARXA
 
 <img width="608" height="422" alt="image" src="https://github.com/user-attachments/assets/f2e85df9-0b12-40fa-901b-1cb4a6af1dfc" />
 <img width="595" height="27" alt="image" src="https://github.com/user-attachments/assets/07d5e4d3-6d21-478c-a2d7-d2ab8267b746" />
 <img width="596" height="277" alt="image" src="https://github.com/user-attachments/assets/38234822-4fd0-44dd-9b5e-435650216a85" />
 <img width="601" height="228" alt="image" src="https://github.com/user-attachments/assets/ee500a51-f390-4e3b-803a-20966e3dac29" />
 
-##5. Gestió d'arrancada
+## 5. Gestió d'arrancada
 Bootrepair
 <img width="806" height="161" alt="image" src="https://github.com/user-attachments/assets/46fa2e71-2c9b-448e-8455-b772b8cf7961" />
 
@@ -87,7 +88,7 @@ AFEGIM LA ISO DEL BOOT REPAIR I INICIEM
 <img width="874" height="531" alt="image" src="https://github.com/user-attachments/assets/9a978779-f60d-46c8-85a9-c773802cda45" />
 <img width="870" height="598" alt="image" src="https://github.com/user-attachments/assets/2b59f6b8-af9c-4f1c-a344-45a89842618f" />
 
-##6.Documentació tècnica: Pinning de paquets amb APT a Ubuntu
+## 6.Documentació tècnica: Pinning de paquets amb APT a Ubuntu
 Objectiu
 Configurar el sistema perquè només el paquet redis-server s’instal·li des del repositori dotdeb.org, mentre que la resta de paquets (com php5, mysql-server, etc.) es mantinguin des dels repositoris oficials d’Ubuntu.
 -Afegim el Repositori
