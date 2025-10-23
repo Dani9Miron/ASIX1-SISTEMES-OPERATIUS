@@ -33,7 +33,12 @@ e4defrag /dev/sda2 (desfragmentació)
 
   -Gestio Particions
       -Gparted
-      -Comandes
+      <img width="777" height="533" alt="image" src="https://github.com/user-attachments/assets/bf11066c-4c38-42f7-aaca-b689f2a4e981" />
+      
+
+      
+     -Comandes
+      <img width="833" height="384" alt="image" src="https://github.com/user-attachments/assets/15002eca-dcdd-44db-8b11-77aaea4aeeb5" />
 
 
 
