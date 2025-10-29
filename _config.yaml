@@ -1,9 +1,14 @@
-theme:  jekyll-theme-chirpy
+title: Fastclick Auditors
+description: Auditoría técnica y desarrollo web
+lang: es-ES
+
+remote_theme: cotes2020/jekyll-theme-chirpy
 
 sass:
   style: compressed
 
 plugins:
+  - jekyll-remote-theme
   - jekyll-seo-tag
 
 include:
