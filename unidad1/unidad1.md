@@ -6,6 +6,7 @@ title: "Sprint.1"
 
 ## 1.Instalacio Ubuntu i WIndows
 
+
 <img width="871" height="476" alt="image" src="https://github.com/user-attachments/assets/4cf4c94f-9ed6-47f8-a00b-ef20865bcfcf" />
 <img width="1269" height="777" alt="image" src="https://github.com/user-attachments/assets/f66e46f2-e0f3-4760-ab2c-4b47ae143818" />
 <img width="1259" height="776" alt="image" src="https://github.com/user-attachments/assets/d77d0a80-925e-494a-b694-f43d238ffd2e" />
