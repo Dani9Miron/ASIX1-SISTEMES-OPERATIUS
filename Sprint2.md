@@ -47,5 +47,29 @@ e4defrag /dev/sda2 (desfragmentació)
 
 ## 2.Gestio de procesos
 ## 3.Gestio d'usuaris i grups i permisos
+  -Fitxers importants
+  <img width="1209" height="760" alt="image" src="https://github.com/user-attachments/assets/025e457b-20b8-48cb-9be7-cb04a5d04c3f" />
+  <img width="1206" height="769" alt="image" src="https://github.com/user-attachments/assets/7b37c045-8d4d-4434-84c1-0a7640f3ff62" />
+  <img width="1206" height="759" alt="image" src="https://github.com/user-attachments/assets/4bb9174a-6b31-4042-95ae-950b4c7c1267" />
+  <img width="1208" height="758" alt="image" src="https://github.com/user-attachments/assets/caceb980-2d89-41ee-92a6-e7388b9d72b5" />
+  <img width="679" height="434" alt="image" src="https://github.com/user-attachments/assets/d2bad246-4d58-4b86-8c60-96e31576203e" />
+
+  -Comandes bàsiques
+  <img width="743" height="464" alt="image" src="https://github.com/user-attachments/assets/e03d0aa5-7ba0-4a03-a45b-38506e895904" />
+  <img width="1012" height="226" alt="image" src="https://github.com/user-attachments/assets/ae7c31cb-5182-4da6-9fce-cc2dc763465f" />
+  <img width="693" height="89" alt="image" src="https://github.com/user-attachments/assets/ba3b0588-1eae-4796-9572-f365a09b9e61" />
+  <img width="640" height="222" alt="image" src="https://github.com/user-attachments/assets/d1741c67-5d23-4769-ada5-28cec1a41c7f" />
+<img width="640" height="222" alt="image" src="https://github.com/user-attachments/assets/4f7f807d-0ca3-4cb7-8b67-bd64d0f0f6e2" />
+  <img width="724" height="354" alt="image" src="https://github.com/user-attachments/assets/d417a0ae-f085-425c-9a47-a6c3fee7ef4d" />
+  <img width="646" height="112" alt="image" src="https://github.com/user-attachments/assets/e57de532-216e-42b0-baa3-7c0da537866c" />
+  <img width="1015" height="116" alt="image" src="https://github.com/user-attachments/assets/bc7db0ac-ff4f-4986-93e1-fc5e3b8df3a3" />
+  <img width="999" height="66" alt="image" src="https://github.com/user-attachments/assets/2703e7c8-4336-4df5-8ad5-5c5fd25fb75f" />
+  <img width="602" height="222" alt="image" src="https://github.com/user-attachments/assets/8705665e-5b00-4e59-9ac5-c712de16b755" />
+  <img width="672" height="592" alt="image" src="https://github.com/user-attachments/assets/d3c3249e-c45c-4c36-b98d-dd8483c17705" />
+
+  -Directoris i fitxers importants
+  -Gestió avançada
+  -PAM
+  quines comande se de utilizar quan vull cambiar un nom de usuari correctament
 ## 4.Copies de seguretat i automatitzacio de tasques
 ## 5.Quotes d'usuari
