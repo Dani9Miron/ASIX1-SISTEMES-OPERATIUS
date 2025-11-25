@@ -73,3 +73,27 @@ e4defrag /dev/sda2 (desfragmentació)
   quines comande se de utilizar quan vull cambiar un nom de usuari correctament
 ## 4.Copies de seguretat i automatitzacio de tasques
 ## 5.Quotes d'usuari
+
+## Mascara
+  -umask és la màscara que defineix els permisos per defecte en fitxers i directoris nous. Resta permisos dels valors base (666 per fitxers, 777 per directoris) per controlar seguretat i accessibilitat.
+   <img width="359" height="55" alt="image" src="https://github.com/user-attachments/assets/4cb7b334-5908-4af6-86a4-4aa9daaa8411" />
+Explicacio de la captura
+<img width="737" height="132" alt="image" src="https://github.com/user-attachments/assets/2b2df245-1f34-4fae-bf6c-2ef1eef19511" />
+Aquí tens una explicació en dues línies de la captura:
+
+**ERASECHAR** (`0177`) i **KILLCHAR** (`025`) defineixen tecles de control del terminal per esborrar caràcters o línies.  
+**UMASK** (`022`) estableix els permisos per defecte: fitxers amb `644` i directoris amb `755`.
+
+.profile
+<img width="1204" height="675" alt="image" src="https://github.com/user-attachments/assets/0d828fea-cd14-44c8-9979-6ccc38e790a3" />
+umask temporal
+<img width="350" height="112" alt="image" src="https://github.com/user-attachments/assets/dbeafcc7-1218-419f-9b9f-588679c3130d" />
+<img width="392" height="52" alt="image" src="https://github.com/user-attachments/assets/eb7adeca-a936-4906-959b-999a3d53c0f3" />
+<img width="606" height="70" alt="image" src="https://github.com/user-attachments/assets/5f6dce85-e6d6-48c1-8d44-cca869a9b8bd" />
+
+
+<img width="514" height="25" alt="image" src="https://github.com/user-attachments/assets/b8cf39f0-4a9e-46eb-868e-11748b959a80" />
+<img width="698" height="125" alt="image" src="https://github.com/user-attachments/assets/e5dedcd1-d695-4bad-a1c0-f4a269db98cc" />
+<img width="525" height="245" alt="image" src="https://github.com/user-attachments/assets/329e1fff-b8e9-4f48-946c-cd1fb3e17ce1" />
+
+
