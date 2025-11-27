@@ -97,3 +97,17 @@ umask temporal
 <img width="525" height="245" alt="image" src="https://github.com/user-attachments/assets/329e1fff-b8e9-4f48-946c-cd1fb3e17ce1" />
 
 
+
+## ACL
+
+<img width="410" height="160" alt="image" src="https://github.com/user-attachments/assets/0416eb44-361a-496e-b71f-814ab1819ad1" />
+
+<img width="547" height="226" alt="image" src="https://github.com/user-attachments/assets/f2e33366-0835-4384-8483-c3fad4de4e4e" />
+
+<img width="903" height="359" alt="image" src="https://github.com/user-attachments/assets/5f9cfdb8-facd-40b8-99ad-946f5b32b0bb" />
+
+<img width="413" height="190" alt="image" src="https://github.com/user-attachments/assets/00893ae2-2d98-4290-9081-e6c7b3790b03" />
+
+
+
+
