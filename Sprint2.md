@@ -107,7 +107,7 @@ umask temporal
 <img width="903" height="359" alt="image" src="https://github.com/user-attachments/assets/5f9cfdb8-facd-40b8-99ad-946f5b32b0bb" />
 
 <img width="413" height="190" alt="image" src="https://github.com/user-attachments/assets/00893ae2-2d98-4290-9081-e6c7b3790b03" />
-
+S'ha eliminat tota ACL del fitxer numeros amb setfacl -b, deixant només els permisos base rwx per a usuari, grup i altres. La comanda getfacl confirma que no hi ha ACLs extres.
 
 
 
