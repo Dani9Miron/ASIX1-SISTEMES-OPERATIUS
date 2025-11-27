@@ -102,7 +102,9 @@ umask temporal
 
 <img width="410" height="160" alt="image" src="https://github.com/user-attachments/assets/0416eb44-361a-496e-b71f-814ab1819ad1" />
 
+
 <img width="547" height="226" alt="image" src="https://github.com/user-attachments/assets/f2e33366-0835-4384-8483-c3fad4de4e4e" />
+S'ha afegit una ACL amb setfacl -m user:segon:--- numeros per denegar tots els permisos a l'usuari segon. La sortida de getfacl confirma que no té accés al fitxer.
 
 <img width="903" height="359" alt="image" src="https://github.com/user-attachments/assets/5f9cfdb8-facd-40b8-99ad-946f5b32b0bb" />
 L'usuari primer pot accedir i crear fitxers dins el directori numeros, mentre que segon rep errors de permís en intentar accedir-hi o modificar-lo. Això indica que els permisos del directori restringeixen l'accés a usuaris no autoritzats.
