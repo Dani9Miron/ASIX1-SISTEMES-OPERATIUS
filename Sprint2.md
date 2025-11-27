@@ -101,7 +101,7 @@ umask temporal
 ## ACL
 
 <img width="410" height="160" alt="image" src="https://github.com/user-attachments/assets/0416eb44-361a-496e-b71f-814ab1819ad1" />
-
+El fitxer numeros té permisos complets (rwx) per a usuari, grup i altres, sense cap ACL afegida. Aquesta configuració permet accés total a qualsevol usuari del sistema.
 
 <img width="547" height="226" alt="image" src="https://github.com/user-attachments/assets/f2e33366-0835-4384-8483-c3fad4de4e4e" />
 S'ha afegit una ACL amb setfacl -m user:segon:--- numeros per denegar tots els permisos a l'usuari segon. La sortida de getfacl confirma que no té accés al fitxer.
