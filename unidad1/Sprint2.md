@@ -46,6 +46,104 @@ e4defrag /dev/sda2 (desfragmentació)
 
 
 ## 2.Gestio de procesos
+# 💻 Gestió de Processos en Sistemes Operatius
+
+---
+
+## Què és un Procés?
+
+Un **procés** és un **programa en execució** que inclou:
+
+* El seu **codi** (les instruccions).
+* Els **recursos assignats** (memòria, fitxers, etc.).
+* L'**execució en si** (el seu estat actual).
+
+Un procés pot estar en:
+
+* **Primer pla (Foreground):** Amb **interacció** directa amb l'usuari (p. ex., un editor de text que estàs utilitzant).
+* **Segon pla (Background):** Sense interacció directa amb l'usuari (p. ex., un servei del sistema o una descàrrega).
+
+---
+
+## Comandes Útils per a la Gestió de Processos
+
+Aquestes comandes són habituals per monitoritzar i controlar els processos:
+
+### 🔍 Visualització de Processos
+
+| Comanda | Descripció |
+| :--- | :--- |
+| `pstree` | Mostra els processos actius en **format d'arbre**. |
+<img width="583" height="481" alt="image" src="https://github.com/user-attachments/assets/eddd33dc-1c2e-4a01-bcbb-e5e4aa0fcfa2" />
+| `pstree -p -h usuari` | Mostra els processos amb el seu **PID** (Process ID) i l'usuari. |
+<img width="539" height="502" alt="image" src="https://github.com/user-attachments/assets/c397647d-8602-4df2-8c7a-db00602739ce" />
+| `top` | Mostra els processos **en viu** amb estadístiques d'ús de CPU i memòria (monitor en temps real). |
+<img width="626" height="120" alt="image" src="https://github.com/user-attachments/assets/aa44df7c-3832-4e0e-b3cb-fc7cba0d7b0f" />
+<img width="625" height="75" alt="image" src="https://github.com/user-attachments/assets/d120ea33-9217-4ba2-9b7e-8b513d5d1356" />
+<img width="616" height="54" alt="image" src="https://github.com/user-attachments/assets/4af4874a-03fe-4c00-8647-94d8f893d7c2" />
+
+| `ps aux` | Mostra **tots els processos** amb detall (la variant més comuna). |
+
+| `pgrep nomproces` | Mostra només el **PID** d'un procés pel seu nom. |
+
+| `pstree | grep nomproces` | Mostra el procés pel seu nom i els seus **processos fills** (aplicant un filtre a `pstree`). |
+
+
+**Altres variants de `ps`:**
+
+* `ps -e`
+* `ps -ejH`
+* `ps -eLf`
+* `ps -eM`
+* `ps -U root` (Mostra només els processos de l'usuari `root`)
+
+### 🔪 Control i Prioritat de Processos
+
+* **Finalitzar un procés:**
+    ```bash
+    kill -9 PID
+    ```
+    <img width="571" height="251" alt="image" src="https://github.com/user-attachments/assets/5737ebff-061b-47ce-83c1-919e047ed613" />
+<img width="441" height="19" alt="image" src="https://github.com/user-attachments/assets/4e8f1d0a-d41f-4769-a46b-4b31ab1441e3" />
+<img width="638" height="98" alt="image" src="https://github.com/user-attachments/assets/1a923076-dc05-4c0f-993a-e7b04aabfcb7" />
+
+    (El flag `-9` assegura la terminació forçada del procés pel seu PID).
+* **Canviar la prioritat d'un procés en execució:**
+    ```bash
+    renice -n <prioritat> -p <PID>
+    ```
+    <img width="628" height="366" alt="image" src="https://github.com/user-attachments/assets/fb884212-6a60-4185-b403-c5992cf7e320" />
+    ![Uploading image.png…]()
+  
+
+    (La prioritat es defineix amb valors de -20 (màxima) a 19 (mínima)).
+* **Iniciar un procés amb una prioritat definida:**
+    ```bash
+    nice -n <prioritat> nomproces
+    ```
+
+---
+
+## Gestió de Processos en Segon Pla (Background)
+
+Aquestes comandes permeten moure processos entre primer i segon pla:
+
+| Acció | Comanda / Mètode |
+| :--- | :--- |
+| **Enviar un procés actual a segon pla (aturat)** | `Ctrl + Z` |
+| **Llistar els processos en segon pla** | `jobs` |
+
+| **Retornar un procés al primer pla** | `fg %n` (on `%n` és el número de procés mostrat per `jobs`) |
+| **Reactivar un procés aturat a segon pla** | `bg %n` (on `%n` és el número de procés mostrat per `jobs`) |
+| **Executar un procés directament en segon pla** | `nomproces &` |
+
+
+
+
+
+
+
+
 ## 3.Gestio d'usuaris i grups i permisos
   -Fitxers importants
   <img width="1209" height="760" alt="image" src="https://github.com/user-attachments/assets/025e457b-20b8-48cb-9be7-cb04a5d04c3f" />
