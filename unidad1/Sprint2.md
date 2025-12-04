@@ -113,7 +113,7 @@ Aquestes comandes són habituals per monitoritzar i controlar els processos:
     renice -n <prioritat> -p <PID>
     ```
     <img width="628" height="366" alt="image" src="https://github.com/user-attachments/assets/fb884212-6a60-4185-b403-c5992cf7e320" />
-    ![Uploading image.png…]()
+    <img width="670" height="312" alt="image" src="https://github.com/user-attachments/assets/487f0b8e-cf7c-4a4c-9cad-b69d6a32bd6e" />
   
 
     (La prioritat es defineix amb valors de -20 (màxima) a 19 (mínima)).
@@ -170,6 +170,42 @@ Aquestes comandes permeten moure processos entre primer i segon pla:
   -PAM
   quines comande se de utilizar quan vull cambiar un nom de usuari correctament
 ## 4.Copies de seguretat i automatitzacio de tasques
+1.TEORIA copies de seguretat
+Les còpies de seguretat (backups) són processos destinats a protegir dades davant pèrdues, errors humans, fallades de maquinari o atacs. Permeten restaurar informació de manera fiable i ràpida.
+
+###  Objectius principals
+- Protegir dades crítiques.
+- Garantir la recuperació en cas d’incident.
+- Minimitzar el temps d’inactivitat.
+- Assegurar la integritat i consistència de la informació.
+
+###  Tipus de còpies de seguretat
+
+| Tipus | Descripció | Avantatges | Inconvenients |
+|-------|------------|------------|----------------|
+| **Completa** | Còpia de totes les dades | Recuperació ràpida | Molt espai i temps |
+| **Incremental** | Només canvis des de l’última incremental | Ràpida i eficient | Recuperació més lenta |
+| **Diferencial** | Canvis des de l’última completa | Compromís entre velocitat i espai | Creix amb el temps |
+| **Mirroring** | Còpia exacta i contínua | Molt actualitzada | No protegeix d’errors humans |
+| **Snapshot** | Estat puntual del sistema | Instantani i eficient | Depèn del sistema de fitxers |
+
+2.Teoria comandes
+   -cp
+   -rsync
+   -dd
+3.Practica comandes
+   -cp
+   ![Uploading image.png…]()
+
+   -rsync
+   -dd
+4. Practica programes Backup
+-Deja-DUp
+-Duplicity
+5.Teoria Automatizacio scripts,cron i anacron
+6.Practica automatizacio
+-cron
+-anacron
 ## 5.Quotes d'usuari
 
 ## Mascara
@@ -209,6 +245,15 @@ L'usuari primer pot accedir i crear fitxers dins el directori numeros, mentre qu
 
 <img width="413" height="190" alt="image" src="https://github.com/user-attachments/assets/00893ae2-2d98-4290-9081-e6c7b3790b03" />
 S'ha eliminat tota ACL del fitxer numeros amb setfacl -b, deixant només els permisos base rwx per a usuari, grup i altres. La comanda getfacl confirma que no hi ha ACLs extres.
+
+
+
+
+
+
+
+
+
 
 
 
