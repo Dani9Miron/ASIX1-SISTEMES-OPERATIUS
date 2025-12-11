@@ -195,7 +195,7 @@ Les còpies de seguretat (backups) són processos destinats a protegir dades dav
    -dd
 3.Practica comandes
    -cp
-   ![Uploading image.png…]()
+ <img width="667" height="306" alt="image" src="https://github.com/user-attachments/assets/3f00f1a8-13dd-477c-bc7a-8fb984c9185e" />
 
    -rsync
    -dd
@@ -206,7 +206,28 @@ Les còpies de seguretat (backups) són processos destinats a protegir dades dav
 6.Practica automatizacio
 -cron
 -anacron
-## 5.Quotes d'usuari
+## 5.Quotes de disc
+
+<img width="721" height="195" alt="image" src="https://github.com/user-attachments/assets/0533f467-5d82-42a5-8479-52c70b024e96" />
+
+<img width="476" height="89" alt="image" src="https://github.com/user-attachments/assets/e0957cca-522d-4088-8ef6-1e7cdad768dc" />
+
+<img width="390" height="27" alt="image" src="https://github.com/user-attachments/assets/b94def1f-7035-4e74-849a-2d177f31673b" />
+<img width="872" height="336" alt="image" src="https://github.com/user-attachments/assets/76448bea-a84e-4b5c-9909-2dcb1d9647ae" />
+<img width="744" height="260" alt="image" src="https://github.com/user-attachments/assets/38c0ef86-9313-4f4f-9196-02aadeca2385" />
+<img width="606" height="62" alt="image" src="https://github.com/user-attachments/assets/8e11a1f4-df83-47cd-8741-fa8758f3391b" />
+<img width="428" height="48" alt="image" src="https://github.com/user-attachments/assets/5c9edfe0-ab24-48e3-9571-b3baabd6e87d" />
+<img width="454" height="44" alt="image" src="https://github.com/user-attachments/assets/038c9ef5-1d62-47b3-9554-d1c627abc96c" />
+<img width="449" height="20" alt="image" src="https://github.com/user-attachments/assets/2157ecfe-82ff-41ba-a05b-c486abaefe68" />
+<img width="1008" height="153" alt="image" src="https://github.com/user-attachments/assets/a9519635-0bff-4334-92b7-ec3e5ece8450" />
+<img width="783" height="228" alt="image" src="https://github.com/user-attachments/assets/e5510b42-52ee-4058-aec9-559bdc2b3e4f" />
+<img width="486" height="175" alt="image" src="https://github.com/user-attachments/assets/a25f277b-7566-4748-bdd1-82a4a1ba4051" />
+<img width="749" height="370" alt="image" src="https://github.com/user-attachments/assets/c8de6521-a14d-45b7-9f03-74a013fb5f16" />
+<img width="716" height="90" alt="image" src="https://github.com/user-attachments/assets/78c5314a-baca-467c-8b17-6fb42264ae84" />
+<img width="714" height="193" alt="image" src="https://github.com/user-attachments/assets/2ebe74f6-3e27-4752-8bb2-9d37faad037b" />
+<img width="675" height="114" alt="image" src="https://github.com/user-attachments/assets/74d3da8c-61d0-4051-94dd-c8705f155980" />
+
+
 
 ## Mascara
   -umask és la màscara que defineix els permisos per defecte en fitxers i directoris nous. Resta permisos dels valors base (666 per fitxers, 777 per directoris) per controlar seguretat i accessibilitat.
