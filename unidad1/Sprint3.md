@@ -16,11 +16,16 @@ Dins d’un directori LDAP, les Unitats Organitzatives (UO) serveixen com a cont
 El primer que cal fer és comprovar la IP del servidor. En aquest cas, la configurarem manualment i verificarem la seva connectivitat fent un ping.
 
 Després, modificarem el nom de la màquina host. Per fer-ho, editarem el fitxer `/etc/hostname` i també farem els canvis corresponents al fitxer `/etc/hosts`.
-![1](imatges/sprint3/ldap/1.png)
-![2](imatges/sprint3/ldap/2.png)
-![3](imatges/sprint3/ldap/3.png)
-![4](imatges/sprint3/ldap/4.png)
-![5](imatges/sprint3/ldap/5.png)
+<img width="664" height="181" alt="image" src="https://github.com/user-attachments/assets/23e0504c-7541-4ff2-bed4-65a3257836d9" />
+
+<img width="673" height="464" alt="image" src="https://github.com/user-attachments/assets/9fc94b43-15d0-46fa-a5e1-e4410d711875" />
+
+<img width="673" height="320" alt="image" src="https://github.com/user-attachments/assets/94b351a4-744f-4f73-bbb0-c297cf7c8a45" />
+
+<img width="440" height="74" alt="image" src="https://github.com/user-attachments/assets/26a09467-47b6-48b0-8500-ee04e3e9cf5e" />
+
+<img width="461" height="180" alt="image" src="https://github.com/user-attachments/assets/fa5019c7-3a29-49ad-bd17-630a7771f624" />
+
 
 
 
@@ -88,3 +93,38 @@ slapcat
 ![17](imatges/sprint3/ldap/17.png)
 
 Aquest procediment assegura que el domini LDAP estigui configurat correctament, amb les unitats organitzatives, grups i usuaris afegits adequadament.
+
+
+### [2. Gestió del domini mitjançant comandes]( gestiodomini.md )
+
+
+### Gestió del domini
+
+Per estructurar l'organització i començar a gestionar usuaris, hi ha dues opcions principals: treballar amb fitxers LDIF o utilitzar comandes directament. En aquest apartat, ens centrarem en l'ús de comandes essencials com `search`, `add`, `modify` i `delete`.
+
+Abans de començar, comprovarem que el domini s'ha creat correctament i després revisarem els fitxers preparats a l'escriptori que contenen informació sobre els usuaris.
+![1](imatges/sprint3/gestiodominii/1.png)
+
+#### 2.1. ldapadd
+
+Tal com es pot observar, el fitxer inclou diverses dades d'usuaris que volem incorporar al sistema. Ho farem utilitzant la comanda `ldapadd`.
+
+Per registrar els usuaris definits en el fitxer LDIF, executarem la comanda següent:
+
+```bash
+ldapadd -x -D "cn=admin,dc=dani-m,dc=cat" -w -f dades.ldif
+```
+![2](imatges/sprint3/gestiodominii/2.png)
+
+#### 2.2. ldapsearch
+
+Un cop els usuaris s'han creat correctament, podem verificar-ne l'existència amb la comanda `ldapsearch`:
+
+```bash
+ldapsearch -xLLL -b "dc=dani-m,dc=cat"
+```
+![3](imatges/sprint3/gestiodominii/3.png)
+
+A més, podem aplicar diferents filtres de cerca per trobar usuaris segons el seu `uid`, `objectClass`, correu electrònic, o qualsevol altra propietat rellevant.
+
+![4](imatges/sprint3/gestiodominii/4.png)
