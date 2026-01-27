@@ -137,9 +137,10 @@ Un cop els usuaris s'han creat correctament, podem verificar-ne l'existència am
 ```bash
 ldapsearch -xLLL -b "dc=dani-m,dc=cat"
 ```
-![3](imatges/sprint3/gestiodominii/3.png)
+<img width="662" height="212" alt="image" src="https://github.com/user-attachments/assets/110063d9-ba05-4492-920c-71c6bbcba2aa" />
 
 A més, podem aplicar diferents filtres de cerca per trobar usuaris segons el seu `uid`, `objectClass`, correu electrònic, o qualsevol altra propietat rellevant.
 
-<img width="662" height="212" alt="image" src="https://github.com/user-attachments/assets/110063d9-ba05-4492-920c-71c6bbcba2aa" />
+<img width="668" height="40" alt="image" src="https://github.com/user-attachments/assets/96838e0d-e590-46a8-a4f1-ed6c0aa74b9c" />
+
 
