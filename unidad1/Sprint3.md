@@ -143,4 +143,266 @@ A més, podem aplicar diferents filtres de cerca per trobar usuaris segons el se
 
 <img width="668" height="40" alt="image" src="https://github.com/user-attachments/assets/96838e0d-e590-46a8-a4f1-ed6c0aa74b9c" />
 
+### [SAMBA]
+
+# Servidor Samba
+
+El **Samba** és una implementació lliure del protocol **SMB/CIFS**, que permet compartir arxius i impressores entre sistemes **Windows i Linux**. Samba pot autenticar usuaris **localment** o mitjançant un servidor **LDAP**, cosa que permet gestionar usuaris i permisos de manera centralitzada.
+
+## Característiques de Samba
+
+- **Compartició d'arxius i impressores**: Permet compartir recursos entre diferents sistemes operatius.
+- **Autenticació flexible**: Pot utilitzar autenticació local o a través d'un servidor LDAP.
+- **Gestió de permisos**: Es poden definir rols i permisos específics per a usuaris i grups.
+
+## Instal·lació i Configuració de Samba
+<img width="580" height="26" alt="image" src="https://github.com/user-attachments/assets/826e2eec-b859-4eb9-bcb5-114e30893857" />
+
+
+
+
+### Instal·lació del paquet Samba
+
+En primer lloc, actualitzem el nostre servidor i instal·lem el paquet **samba**:
+
+```bash
+apt update && apt install samba
+```
+
+### Creació d'una carpeta compartida
+
+Un cop tenim el paquet instal·lat, creem una carpeta a l'arrel i assignem els permisos adients:
+
+```bash
+mkdir 
+chmod 770 
+chown root:colors 
+```
+<img width="671" height="242" alt="image" src="https://github.com/user-attachments/assets/9ddcde21-a1f5-418a-867f-be52db48e02b" />
+
+
+### Configuració del fitxer smb.conf
+
+Editem el fitxer de configuració de Samba:
+
+```bash
+nano /etc/samba/smb.conf
+```
+
+Afegim la configuració per compartir la carpeta i definir permisos:
+
+<img width="657" height="440" alt="image" src="https://github.com/user-attachments/assets/b912ab52-0d23-4862-8693-0eabe50eead1" />
+
+
+Desem i tanquem el fitxer.
+
+### Creació d'usuaris i grups
+
+Creem el grup **colors**:
+
+```bash
+groupadd colors
+```
+
+Creem els usuaris amb restricció d'inici de sessió:
+
+```bash
+useradd -M -s /sbin/nologin blau
+useradd -M -s /sbin/nologin groc
+useradd -M -s /sbin/nologin roig
+```
+<img width="606" height="25" alt="image" src="https://github.com/user-attachments/assets/f54aa90b-2e61-470f-b80c-21e9695a2933" />
+
+<img width="607" height="196" alt="image" src="https://github.com/user-attachments/assets/c0af9cf1-f55c-4aff-a456-3fb554ead491" />
+
+
+Afegim els usuaris al grup **colors**:
+
+```bash
+usermod -aG colors blau
+usermod -aG colors groc
+```
+
+L'usuari **roig** no el posem al grup per restringir-ne l'accés.
+
+### Assignació de contrasenyes Samba
+
+Per permetre que els usuaris iniciïn sessió en Samba, assignem una contrasenya per a cadascun:
+
+```bash
+smbpasswd -a blau
+smbpasswd -a groc
+smbpasswd -a roig
+```
+<img width="498" height="261" alt="image" src="https://github.com/user-attachments/assets/d119408a-bedf-46f7-82bb-bb64b051f836" />
+
+
+
+### Configuració de permisos![12](imatges/sprint3/entron/12.png)
+
+Modifiquem els permisos perquè:
+
+- **Blau** pugui **llegir i escriure**.
+- **Verd** només pugui **llegir**.
+- **Roig** **no pugui accedir**.
+
+
+<img width="558" height="327" alt="image" src="https://github.com/user-attachments/assets/97c2be96-4816-4b55-a05f-e27036ec872f" />
+
+Reiniciem el servei Samba:
+
+```bash
+systemctl restart smbd
+```
+
+## Connexió des del client
+
+### Accés com a convidat
+
+Obrim l'explorador d'arxius i anem a **Altres ubicacions**. Introduïm l'adreça del servidor Samba:
+
+```
+smb://IP_DEL_SERVIDOR
+```
+<img width="656" height="406" alt="image" src="https://github.com/user-attachments/assets/9d55788d-5f16-4206-97b4-7fe07b991bf0" />
+
+
+Triem l'opció **Convidat** i comprovem si podem accedir.
+
+### Accés com a usuari registrat
+
+Repetim el procés, però aquest cop introduïm les credencials d'un usuari creat (**blau, verd o roig**).
+
+- **Blau** hauria de poder crear i modificar arxius.
+- **Groc** només hauria de poder llegir.
+- **Roig** hauria de rebre un error d'accés denegat.
+
+### Comprovació de permisos des del servidor
+
+Tornem al servidor i executem:
+
+```bash
+ls -l 
+```
+<img width="442" height="90" alt="image" src="https://github.com/user-attachments/assets/675cfc9d-065a-4ecb-82a2-d4416dd0666b" />
+
+<img width="670" height="406" alt="image" src="https://github.com/user-attachments/assets/3daf5507-4cc7-4404-88d2-025df373c283" />
+
+<img width="525" height="103" alt="image" src="https://github.com/user-attachments/assets/4a2c6b29-8be4-4867-bf01-3b1999c8fda3" />
+
+
+
+Això ens permetrà verificar que els permisos s'han aplicat correctament.
+
+## Integració de Samba amb LDAP
+
+En un entorn Samba, els usuaris poden tenir un directori **home** centralitzat que es munta automàticament en qualsevol màquina de la xarxa. Això és possible gràcies a la integració de Samba amb **LDAP** (Lightweight Directory Access Protocol), que facilita la gestió centralitzada de les comptes d'usuari.
+
+## Conclusió
+
+En aquest document hem vist com **instal·lar, configurar i gestionar Samba** en un servidor Linux, definir **usuaris i permisos** i realitzar proves des d'un client per assegurar que tot funciona correctament.
+
+
+### [5.Servidor NFS]( servidornfs.md )
+
+
+# Servidor NFS
+
+El **NFS** (Network File System) és un protocol que permet compartir arxius i directoris **recursos** a través d'una xarxa. Amb NFS, un servidor pot exportar directoris i els clients poden muntar aquests directoris com si fossin locals. Això és útil en entorns on múltiples màquines necessiten accedir als mateixos arxius, com en entorns de treball en equip o en sistemes distribuïts.
+
+## Característiques del NFS
+
+- **Accés a arxius compartits**: Permet que diverses màquines accedeixin als arxius de manera simultània.
+- **Autenticació a nivell de host**: L'autenticació en NFS es realitza a nivell de host, no a nivell d'usuari. Això vol dir que el servidor NFS confia en les màquines clients que tenen permís per accedir als directoris exportats.
+
+## Integració de NFS amb LDAP
+
+En un entorn NFS, els usuaris poden tenir un directori **home** centralitzat que es munta automàticament en qualsevol màquina de la xarxa. Això és possible gràcies a la integració de NFS amb **LDAP** (Lightweight Directory Access Protocol), que facilita la gestió centralitzada de les comptes d'usuari.
+
+Instalacio client Ubuntu
+<img width="656" height="240" alt="image" src="https://github.com/user-attachments/assets/cd315caa-d427-4496-9e88-e4e967d68392" />
+
+
+<img width="668" height="363" alt="image" src="https://github.com/user-attachments/assets/875df589-fa38-417a-bc3f-a0fdba60ee29" />
+
+
+<img width="633" height="473" alt="image" src="https://github.com/user-attachments/assets/e77a9162-17dc-4606-b340-49bcc5a327f3" />
+
+
+<img width="627" height="63" alt="image" src="https://github.com/user-attachments/assets/55a3319b-07cb-450e-bf4a-033e5dd44cd7" />
+
+
+<img width="429" height="107" alt="image" src="https://github.com/user-attachments/assets/88b76e48-5800-46d8-8fd5-cc232bd8d548" />
+
+
+<img width="661" height="233" alt="image" src="https://github.com/user-attachments/assets/ce3b452d-2936-4eff-9c9c-84b7fee5dbe3" />
+
+## [3. Entorns Gràfics]( entornsgrafics.md )
+
+# Configuració d'un servidor LDAP amb Apache Directory Studio
+
+En aquest apartat veurem com configurar un servidor LDAP amb una interfície gràfica. Per fer-ho, utilitzarem Apache Directory Studio, una eina intuïtiva i senzilla.
+
+## Instal·lació d'Apache Directory Studio
+
+1. Baixem l'aplicació des de la seva [pàgina oficial](https://directory.apache.org/studio/).
+2. Descomprimim el fitxer descarregat.
+3. Executem el programa.
+<img width="632" height="248" alt="image" src="https://github.com/user-attachments/assets/2c98cc03-a02e-43b0-86b5-4e0b4ae86186" />
+
+<img width="644" height="130" alt="image" src="https://github.com/user-attachments/assets/ed93201c-26fb-40cb-b3ef-e0db3ccaaa7d" />
+
+
+## Connexió amb el servidor LDAP
+
+1. Un cop dins, busquem la connexió del nostre servidor LDAP.
+2. Iniciem sessió amb les nostres credencials.
+3. Afegim noves entrades (usuaris o grups). Podem crear-les des de zero o utilitzar plantilles.
+4. En aquest cas, farem servir una plantilla per crear un nou usuari.
+5. Comprovem que els usuaris creats prèviament estan dins de la nostra estructura.
+
+<img width="614" height="450" alt="image" src="https://github.com/user-attachments/assets/fb6b0ee8-62b7-489a-8fdb-7946a3170a28" />
+
+## Afegir classes d'objecte
+
+- Assignem les classes d'objecte necessàries per definir les propietats de l'usuari.
+
+## Definir el CN de l'usuari
+
+- Escollim un "Common Name" (`cn`) per a l'usuari, que serà el seu identificador dins del directori.
+<img width="614" height="720" alt="image" src="https://github.com/user-attachments/assets/b51d3585-55fe-4800-86cf-20cc6be27d66" />
+
+
+## Configuració dels atributs de l'usuari
+
+1. Afegim els atributs necessaris perquè l'usuari pugui ser reconegut pel sistema.
+2. Definim una contrasenya.
+3. Assignem una carpeta `home` dins del sistema.
+4. Especifiquem l'intèrpret de comandes (`/bin/bash`) perquè l'usuari pugui iniciar sessió correctament.
+<img width="611" height="574" alt="image" src="https://github.com/user-attachments/assets/533c3f64-2473-4d75-8478-3df2ad9e08f3" />
+
+<img width="608" height="596" alt="image" src="https://github.com/user-attachments/assets/3101d762-202b-46a4-ba5b-5a1b854ef687" />
+
+<img width="603" height="585" alt="image" src="https://github.com/user-attachments/assets/283bf391-8ad7-40cf-9f1c-dbe7de7c1466" />
+
+<img width="606" height="584" alt="image" src="https://github.com/user-attachments/assets/8cf2ec49-90fd-44e1-b911-6945c5cdb530" />
+
+<img width="608" height="580" alt="image" src="https://github.com/user-attachments/assets/2cdfecea-c103-4f40-883a-f8301845072f" />
+
+<img width="640" height="486" alt="image" src="https://github.com/user-attachments/assets/91a45a04-ad96-4c10-96f0-7be1b00daf70" />
+
+<img width="631" height="383" alt="image" src="https://github.com/user-attachments/assets/4c8c7e2b-f176-4ea9-b731-e8f1973290aa" />
+
+
+
+## Accés amb el nou usuari
+
+1. Quan iniciem sessió amb el client LDAP, seleccionem l'opció "No esteu llistat".
+2. Introduïm les nostres credencials.
+3. Es crea automàticament la carpeta `home` al directori especificat.
+4. Verifiquem que podem accedir amb el nou usuari correctament.
+<img width="350" height="322" alt="image" src="https://github.com/user-attachments/assets/ed234b36-8bb6-4a63-96c6-fa12d393dc53" />
+
+Amb aquests passos, ja tindrem configurat el nostre servidor LDAP amb un usuari funcional. 
+
 
