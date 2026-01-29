@@ -337,7 +337,6 @@ Instalacio client Ubuntu
 
 <img width="661" height="233" alt="image" src="https://github.com/user-attachments/assets/ce3b452d-2936-4eff-9c9c-84b7fee5dbe3" />
 
-## [3. Entorns Gràfics]
 
 # Configuració d'un servidor LDAP amb Apache Directory Studio
 
