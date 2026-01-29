@@ -238,7 +238,7 @@ smbpasswd -a roig
 
 
 
-### Configuració de permisos![12](imatges/sprint3/entron/12.png)
+### Configuració de permisos
 
 Modifiquem els permisos perquè:
 
