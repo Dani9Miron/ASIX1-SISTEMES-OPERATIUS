@@ -303,7 +303,7 @@ En un entorn Samba, els usuaris poden tenir un directori **home** centralitzat q
 En aquest document hem vist com **instal·lar, configurar i gestionar Samba** en un servidor Linux, definir **usuaris i permisos** i realitzar proves des d'un client per assegurar que tot funciona correctament.
 
 
-### [5.Servidor NFS]( servidornfs.md )
+### [5.Servidor NFS]
 
 
 # Servidor NFS
@@ -337,7 +337,7 @@ Instalacio client Ubuntu
 
 <img width="661" height="233" alt="image" src="https://github.com/user-attachments/assets/ce3b452d-2936-4eff-9c9c-84b7fee5dbe3" />
 
-## [3. Entorns Gràfics]( entornsgrafics.md )
+## [3. Entorns Gràfics]
 
 # Configuració d'un servidor LDAP amb Apache Directory Studio
 
@@ -404,5 +404,67 @@ En aquest apartat veurem com configurar un servidor LDAP amb una interfície gr�
 <img width="350" height="322" alt="image" src="https://github.com/user-attachments/assets/ed234b36-8bb6-4a63-96c6-fa12d393dc53" />
 
 Amb aquests passos, ja tindrem configurat el nostre servidor LDAP amb un usuari funcional. 
+
+### [4.Unir equips al domini]
+
+# Unir equips al domini
+
+En aquesta part veurem com connectar un equip client al domini que hem creat prèviament.
+
+## Instal·lació del paquet necessari
+
+El primer pas seria instal·lar el següent paquet al nostre equip client:
+
+```bash
+apt install libnss-ldap libpam-ldap nscd
+```
+
+Un cop finalitzi la instal·lació del paquet, se'ns obrirà una pestanya de configuració similar a l'anterior que hem vist durant la configuració del servidor. En aquest cas, és important saber la IP de la màquina servidor, ja que serà el primer que configurarem.
+
+## Configuració del domini
+
+Un cop feta aquesta part, seguirem amb la configuració respectant els noms de domini que hem donat prèviament.
+
+Amb aquests passos ja tindrem el paquet configurat. Seguidament, haurem de canviar alguns paràmetres del client, ja que volem que detecti primer el servidor LDAP, i ho farem modificant el fitxer `/etc/nsswitch.conf`.
+
+```bash
+sudo nano /etc/nsswitch.conf
+```
+
+D'aquesta forma, ens assegurem que els usuaris que hi ha a l'LDAP siguin revisats pel nostre client. Per això, li indiquem els fitxers que ha de revisar, els d'usuari, grups i contrasenyes.
+
+## Configuració de la sessió dels usuaris LDAP
+
+Per configurar la sessió dels usuaris LDAP, també necessitarem modificar el següent fitxer:
+
+```bash
+sudo nano /etc/pam.d/common-session
+```
+
+Aquesta modificació assegura que, quan un usuari inicia sessió i no té un directori principal, se li crearà automàticament un nou directori principal amb el contingut de `/etc/skel` i amb els permisos especificats per `umask=022`.
+
+## Configuració de la pantalla d'inici de sessió
+
+A continuació, ajustarem com es presenta la pantalla d'inici de sessió als usuaris, especificant la sessió per defecte i permetent l'accés manual amb el nom d'usuari.
+
+Amb aquesta configuració, indiquem que el gestor de pantalla ha de mostrar una opció per permetre als usuaris introduir manualment el seu nom d'usuari en lloc de seleccionar-lo d'una llista. Això pot ser útil en entorns on hi ha molts usuaris o quan es vol permetre l'accés a usuaris que no apareixen a la llista predeterminada.
+
+## Prova d'accés amb un usuari
+
+Seguidament, farem una prova per `alu1`, un usuari inserit i configurat prèviament. Primerament, ens assegurem que aquest aparegui al fitxer `/etc/passwd`.
+
+```bash
+grep alu1 /etc/passwd
+```
+
+Si `alu1` apareix, reiniciarem el sistema i, a l'hora d'escollir usuari, seleccionarem l'opció de "no apareixeu llistat", llavors indicarem usuari i contrasenya.
+
+Una altra opció és fer-ho des del terminal, canviant d'usuari amb:
+
+```bash
+su alu1
+```
+
+La qüestió és poder utilitzar l'usuari `alu1` correctament.
 
 
