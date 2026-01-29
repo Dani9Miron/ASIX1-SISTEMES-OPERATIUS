@@ -1,5 +1,5 @@
 ## [ Sprint3]
-### [1.Instal·lació domini LDAP]
+
 
 # Instal·lació domini LDAP
 
@@ -107,7 +107,7 @@ slapcat
 Aquest procediment assegura que el domini LDAP estigui configurat correctament, amb les unitats organitzatives, grups i usuaris afegits adequadament.
 
 
-### [2. Gestió del domini mitjançant comandes]
+
 
 
 ### Gestió del domini
@@ -143,7 +143,7 @@ A més, podem aplicar diferents filtres de cerca per trobar usuaris segons el se
 
 <img width="668" height="40" alt="image" src="https://github.com/user-attachments/assets/96838e0d-e590-46a8-a4f1-ed6c0aa74b9c" />
 
-### [SAMBA]
+
 
 # Servidor Samba
 
@@ -303,7 +303,7 @@ En un entorn Samba, els usuaris poden tenir un directori **home** centralitzat q
 En aquest document hem vist com **instal·lar, configurar i gestionar Samba** en un servidor Linux, definir **usuaris i permisos** i realitzar proves des d'un client per assegurar que tot funciona correctament.
 
 
-### [5.Servidor NFS]
+
 
 
 # Servidor NFS
@@ -405,7 +405,6 @@ En aquest apartat veurem com configurar un servidor LDAP amb una interfície gr�
 
 Amb aquests passos, ja tindrem configurat el nostre servidor LDAP amb un usuari funcional. 
 
-### [4.Unir equips al domini]
 
 # Unir equips al domini
 
