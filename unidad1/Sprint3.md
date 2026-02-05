@@ -397,7 +397,8 @@ En aquest apartat veurem com configurar un servidor LDAP amb una interfície gr�
 ## Definir el CN de l'usuari
 
 - Escollim un "Common Name" (`cn`) per a l'usuari, que serà el seu identificador dins del directori.
-![4](imatges/sprint3/entron/4.png)
+<img width="608" height="724" alt="image" src="https://github.com/user-attachments/assets/a1473c7d-8257-433c-bb23-2a1fdd8ec484" />
+
 
 ## Configuració dels atributs de l'usuari
 
@@ -405,13 +406,20 @@ En aquest apartat veurem com configurar un servidor LDAP amb una interfície gr�
 2. Definim una contrasenya.
 3. Assignem una carpeta `home` dins del sistema.
 4. Especifiquem l'intèrpret de comandes (`/bin/bash`) perquè l'usuari pugui iniciar sessió correctament.
-![5](imatges/sprint3/entron/5.png)
-![6](imatges/sprint3/entron/6.png)
-![7](imatges/sprint3/entron/7.png)
-![8](imatges/sprint3/entron/8.png)
-![9](imatges/sprint3/entron/9.png)
-![10](imatges/sprint3/entron/10.png)
-![11](imatges/sprint3/entron/11.png)
+<img width="603" height="591" alt="image" src="https://github.com/user-attachments/assets/97251e89-dc51-490d-9003-414ffcf1b175" />
+
+<img width="605" height="585" alt="image" src="https://github.com/user-attachments/assets/865dd2ba-47cd-401a-95cd-83da1cc25145" />
+
+<img width="602" height="581" alt="image" src="https://github.com/user-attachments/assets/3ae8357f-ce67-4817-b5b2-7b4d01aafd3b" />
+
+<img width="602" height="581" alt="image" src="https://github.com/user-attachments/assets/3b4eaab1-4df3-4bcb-b202-0179eea44580" />
+
+<img width="603" height="586" alt="image" src="https://github.com/user-attachments/assets/5556c8f7-187d-430f-92b2-7a41021f142d" />
+
+<img width="629" height="472" alt="image" src="https://github.com/user-attachments/assets/6926b9bc-7590-45c6-b9dd-c79d9b790be6" />
+
+<img width="635" height="381" alt="image" src="https://github.com/user-attachments/assets/37d5a38d-011d-4b95-b536-8365026bf41d" />
+
 
 
 ## Accés amb el nou usuari
@@ -420,6 +428,7 @@ En aquest apartat veurem com configurar un servidor LDAP amb una interfície gr�
 2. Introduïm les nostres credencials.
 3. Es crea automàticament la carpeta `home` al directori especificat.
 4. Verifiquem que podem accedir amb el nou usuari correctament.
-![12](imatges/sprint3/entron/12.png)
+<img width="321" height="312" alt="image" src="https://github.com/user-attachments/assets/3109c72b-7541-45dc-90f1-018a59d0ce3b" />
+
 Amb aquests passos, ja tindrem configurat el nostre servidor LDAP amb un usuari funcional.
 
