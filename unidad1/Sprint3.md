@@ -365,7 +365,7 @@ su alu1
 La qüestió és poder utilitzar l'usuari `alu1` correctament.
 
 
-## [3. Entorns Gràfics]
+## 3. Entorns Gràfics
 
 # Configuració d'un servidor LDAP amb Apache Directory Studio
 
