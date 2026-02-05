@@ -304,11 +304,6 @@ En aquest document hem vist com **instal·lar, configurar i gestionar Samba** en
 
 
 
-
-
-
-
-
 # Unir equips al domini
 
 En aquesta part veurem com connectar un equip client al domini que hem creat prèviament.
@@ -369,4 +364,62 @@ su alu1
 
 La qüestió és poder utilitzar l'usuari `alu1` correctament.
 
+
+## [3. Entorns Gràfics]
+
+# Configuració d'un servidor LDAP amb Apache Directory Studio
+
+En aquest apartat veurem com configurar un servidor LDAP amb una interfície gràfica. Per fer-ho, utilitzarem Apache Directory Studio, una eina intuïtiva i senzilla.
+
+## Instal·lació d'Apache Directory Studio
+
+1. Baixem l'aplicació des de la seva [pàgina oficial](https://directory.apache.org/studio/).
+2. Descomprimim el fitxer descarregat.
+3. Executem el programa.
+<img width="613" height="311" alt="image" src="https://github.com/user-attachments/assets/e632638c-acce-4661-8436-d6f477ab051d" />
+<img width="643" height="200" alt="image" src="https://github.com/user-attachments/assets/c7ce9627-7025-406b-b222-ec1a051f3e80" />
+
+
+## Connexió amb el servidor LDAP
+
+1. Un cop dins, busquem la connexió del nostre servidor LDAP.
+2. Iniciem sessió amb les nostres credencials.
+3. Afegim noves entrades (usuaris o grups). Podem crear-les des de zero o utilitzar plantilles.
+4. En aquest cas, farem servir una plantilla per crear un nou usuari.
+5. Comprovem que els usuaris creats prèviament estan dins de la nostra estructura.
+
+<img width="607" height="728" alt="image" src="https://github.com/user-attachments/assets/da162f85-9550-4d9e-8ac1-eef3ec89c260" />
+
+## Afegir classes d'objecte
+
+- Assignem les classes d'objecte necessàries per definir les propietats de l'usuari.
+
+## Definir el CN de l'usuari
+
+- Escollim un "Common Name" (`cn`) per a l'usuari, que serà el seu identificador dins del directori.
+![4](imatges/sprint3/entron/4.png)
+
+## Configuració dels atributs de l'usuari
+
+1. Afegim els atributs necessaris perquè l'usuari pugui ser reconegut pel sistema.
+2. Definim una contrasenya.
+3. Assignem una carpeta `home` dins del sistema.
+4. Especifiquem l'intèrpret de comandes (`/bin/bash`) perquè l'usuari pugui iniciar sessió correctament.
+![5](imatges/sprint3/entron/5.png)
+![6](imatges/sprint3/entron/6.png)
+![7](imatges/sprint3/entron/7.png)
+![8](imatges/sprint3/entron/8.png)
+![9](imatges/sprint3/entron/9.png)
+![10](imatges/sprint3/entron/10.png)
+![11](imatges/sprint3/entron/11.png)
+
+
+## Accés amb el nou usuari
+
+1. Quan iniciem sessió amb el client LDAP, seleccionem l'opció "No esteu llistat".
+2. Introduïm les nostres credencials.
+3. Es crea automàticament la carpeta `home` al directori especificat.
+4. Verifiquem que podem accedir amb el nou usuari correctament.
+![12](imatges/sprint3/entron/12.png)
+Amb aquests passos, ja tindrem configurat el nostre servidor LDAP amb un usuari funcional.
 
