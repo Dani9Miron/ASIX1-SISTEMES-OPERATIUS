@@ -432,3 +432,35 @@ En aquest apartat veurem com configurar un servidor LDAP amb una interfície gr�
 
 Amb aquests passos, ja tindrem configurat el nostre servidor LDAP amb un usuari funcional.
 
+# Servidor NFS
+
+El **NFS** (Network File System) és un protocol que permet compartir arxius i directoris **recursos** a través d'una xarxa. Amb NFS, un servidor pot exportar directoris i els clients poden muntar aquests directoris com si fossin locals. Això és útil en entorns on múltiples màquines necessiten accedir als mateixos arxius, com en entorns de treball en equip o en sistemes distribuïts.
+
+## Característiques del NFS
+
+- **Accés a arxius compartits**: Permet que diverses màquines accedeixin als arxius de manera simultània.
+- **Autenticació a nivell de host**: L'autenticació en NFS es realitza a nivell de host, no a nivell d'usuari. Això vol dir que el servidor NFS confia en les màquines clients que tenen permís per accedir als directoris exportats.
+
+## Integració de NFS amb LDAP
+
+En un entorn NFS, els usuaris poden tenir un directori **home** centralitzat que es munta automàticament en qualsevol màquina de la xarxa. Això és possible gràcies a la integració de NFS amb **LDAP** (Lightweight Directory Access Protocol), que facilita la gestió centralitzada de les comptes d'usuari.
+
+Instalacio client Ubuntu
+
+<img width="721" height="272" alt="image" src="https://github.com/user-attachments/assets/663547f2-2df8-4954-88b4-cb3e7a04bcaa" />
+
+<img width="751" height="409" alt="image" src="https://github.com/user-attachments/assets/6ab59b4a-54ec-4c7f-b5d2-415310ed9f0e" />
+
+<img width="711" height="534" alt="image" src="https://github.com/user-attachments/assets/863d6967-f1f4-4497-9d10-381f9c4e5336" />
+
+
+<img width="598" height="65" alt="image" src="https://github.com/user-attachments/assets/57a1a952-b810-4aa6-9c80-73247992f647" />
+
+<img width="738" height="525" alt="image" src="https://github.com/user-attachments/assets/7cfa1e88-2eb8-4b90-a242-4810f3ebf1c8" />
+
+<img width="745" height="280" alt="image" src="https://github.com/user-attachments/assets/e5477f9a-85a3-4b55-9b6e-8b1870351237" />
+
+
+
+
+
