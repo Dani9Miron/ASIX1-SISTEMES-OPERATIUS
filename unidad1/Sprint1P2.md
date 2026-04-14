@@ -63,26 +63,38 @@ En aquest punt configurarem una IP estàtica, ja que ens interessa que el servid
  
 <img width="405" height="449" alt="image" src="https://github.com/user-attachments/assets/dd27d78b-87f6-47cc-9e4b-23280272db8c" />
  
-![18](imatges/SPRINT1P2/W18.png) 
 Un cop tot configurat, des del terminal (CMD) comprovem que la IP sigui la configurada amb la comanda `ipconfig`.
-![19](imatges/SPRINT1P2/W19.png)
+<img width="541" height="228" alt="image" src="https://github.com/user-attachments/assets/318aff90-718a-42dc-acc5-97866128d373" />
+
 
 ## Instal·lació Windows 10
 
 Com hem fet a l'apartat anterior, seleccionarem la imatge ISO del sistema operatiu Windows 10. Un cop fet això, donarem els paràmetres de la màquina virtual: RAM, espai i nuclis.
-![1](imatges/SPRINT1P2/1.png)  
-![2](imatges/SPRINT1P2/2.png)  
-![3](imatges/SPRINT1P2/3.png)  
+<img width="670" height="352" alt="image" src="https://github.com/user-attachments/assets/6c55d0e4-a9ac-431a-8496-8f5b7e32c1e8" />
+ 
+<img width="671" height="360" alt="image" src="https://github.com/user-attachments/assets/f86944c3-6270-4327-bca4-7cace96e6e80" />
+ 
+<img width="670" height="560" alt="image" src="https://github.com/user-attachments/assets/d994e1d6-23b3-45de-81cb-cc074da1208f" />
+
  
 Un cop tenim feta la configuració de la màquina, l'arrenquem i s'iniciarà l'instal·lador de Windows. Seguirem els passos que hem vist en l'apartat anterior, ja que la instal·lació és molt similar.
-![4](imatges/SPRINT1P2/4.png)  
-![5](imatges/SPRINT1P2/5.png)  
-![6](imatges/SPRINT1P2/6.png)  
-![7](imatges/SPRINT1P2/7.png)  
-![8](imatges/SPRINT1P2/8.png)  
-![9](imatges/SPRINT1P2/9.png)
+<img width="670" height="568" alt="image" src="https://github.com/user-attachments/assets/a1c810e3-398f-48ab-b23c-361ab0a95e1f" />
+
+<img width="665" height="558" alt="image" src="https://github.com/user-attachments/assets/65d88c18-e50a-47a8-a0b8-3a7ea8a07b28" />
+ 
+<img width="667" height="561" alt="image" src="https://github.com/user-attachments/assets/d1783056-fc5b-4600-92b8-c951a6ed6f07" />
+
+<img width="665" height="561" alt="image" src="https://github.com/user-attachments/assets/7fbd077d-ef28-484a-85cc-76da4670562e" />
+  
+<img width="666" height="475" alt="image" src="https://github.com/user-attachments/assets/2a6170b2-a22d-411b-ac7e-7d2fd05d7168" />
+
+<img width="668" height="493" alt="image" src="https://github.com/user-attachments/assets/4d2de7e8-7cb1-4536-b3fa-d99800a12692" />
+
 
 Un cop acabada la instal·lació esborrarem la imatge ISO d'instal·lació. I arrenquem la màquina de nou. Ara ens demanarà configurar l'usuari i una sèrie de funcionalitats de Windows. Aquestes es poden escollir al nostre gust — en aquest cas s’han rebutjat totes.
-![10](imatges/SPRINT1P2/10.png)  
-![11](imatges/SPRINT1P2/11.png)  
-![12](imatges/SPRINT1P2/12.png)  
+<img width="644" height="483" alt="image" src="https://github.com/user-attachments/assets/56284c7c-5e18-423c-ac36-d5d9f3c8829e" />
+ 
+<img width="670" height="479" alt="image" src="https://github.com/user-attachments/assets/d9548d98-458a-41ae-912e-f8487d84c251" />
+ 
+<img width="670" height="483" alt="image" src="https://github.com/user-attachments/assets/bcdb3059-ee24-4456-a659-70475225775b" />
+
