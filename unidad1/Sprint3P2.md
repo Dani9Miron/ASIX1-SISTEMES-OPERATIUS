@@ -4,8 +4,6 @@
 
 En aquest sprint veurem com configurar i administrar dominis en un entorn Windows, gestionant comptes d'usuari, grups i perfils mòbils. També establirem polítiques de seguretat i control d'accés als recursos tant locals com de xarxa.
 
----
-
 ## Active Directory
 
 **Active Directory** és el nom que Microsoft dona a la seva implementació del servei de directori en una xarxa distribuïda de computadors.
@@ -23,10 +21,13 @@ En aquest sprint veurem com configurar i administrar dominis en un entorn Window
 2. A la configuració de xarxa del servidor, comprova que detecta els dos adaptadors.
 
 3. Assigna una adreça IP fixa a un dels adaptadors utilitzant IPv4, i comprova la configuració amb el CMD.
-![1](imatges/SPRINT3P2/1.png)  
-![2](imatges/SPRINT3P2/2.png)  
-![3](imatges/SPRINT3P2/3.png)  
-![4](imatges/SPRINT3P2/4.png)
+<img width="725" height="437" alt="image" src="https://github.com/user-attachments/assets/5b6d3fa9-1c05-451a-89fb-f67912ad4f64" />
+<img width="639" height="262" alt="image" src="https://github.com/user-attachments/assets/1239f7db-04fd-415f-b447-c02e6d0aa50a" />
+ 
+<img width="719" height="421" alt="image" src="https://github.com/user-attachments/assets/8482944c-9f55-41eb-b5e5-8c8549cc4e2a" />
+
+<img width="625" height="322" alt="image" src="https://github.com/user-attachments/assets/cb8984e2-6452-4cbd-b830-c85eb21ec0cf" />
+
 
 
 ## Configuració del Domini
@@ -45,14 +46,19 @@ En aquest sprint veurem com configurar i administrar dominis en un entorn Window
 4. Revisa les característiques associades i confirma la instal·lació.
 
 5. Un cop finalitzat, apareixerà l’opció per **promoure el servidor a controlador de domini**.
-![5](imatges/SPRINT3P2/5.png)  
-![6](imatges/SPRINT3P2/6.png)  
-![7](imatges/SPRINT3P2/7.png)  
-![8](imatges/SPRINT3P2/8.png)  
-![9](imatges/SPRINT3P2/9.png)  
-![10](imatges/SPRINT3P2/10.png)  
-![11](imatges/SPRINT3P2/11.png)  
-![12](imatges/SPRINT3P2/12.png)  
+<img width="727" height="322" alt="image" src="https://github.com/user-attachments/assets/4a8de4bd-74ba-4921-a54a-f24e4148ee54" />
+
+<img width="728" height="513" alt="image" src="https://github.com/user-attachments/assets/f6ae6408-8350-40ae-9032-fb56ddd74961" />
+ 
+<img width="721" height="509" alt="image" src="https://github.com/user-attachments/assets/ff0a17c7-7a8f-4cbd-bf23-402479b6ec03" />
+<img width="706" height="510" alt="image" src="https://github.com/user-attachments/assets/701307e5-6498-4a81-9812-af191511784d" />
+
+<img width="715" height="509" alt="image" src="https://github.com/user-attachments/assets/2a524308-e474-4207-a6a3-0f922bf87d8d" />
+<img width="720" height="512" alt="image" src="https://github.com/user-attachments/assets/4bdcc323-804a-4775-a7ec-03b1e0d87cd1" />
+<img width="704" height="508" alt="image" src="https://github.com/user-attachments/assets/083ca549-e842-4212-9147-326a45fb1f74" />
+
+<img width="718" height="527" alt="image" src="https://github.com/user-attachments/assets/26fa0850-d2ec-4f61-b08d-9ca81f7c6f0f" />
+ 
 
 ### Promoció a controlador de domini
 
