@@ -14,7 +14,8 @@ Per fer una auditoria amb Windows, cal configurar-la mitjançant les **GPOs** (p
 
 Des d'aquí definirem les polítiques desitjades.
 
-![1](imatges/SPRINT5P2/1.png)  
+<img width="667" height="414" alt="image" src="https://github.com/user-attachments/assets/7c2573f5-5891-4d72-bdb9-0c4a5578092d" />
+ 
  
 
 ---
@@ -23,7 +24,8 @@ Des d'aquí definirem les polítiques desitjades.
 
 Podem establir que cada política només es registri en cas d’**error**, d’**èxit**, o ambdues. Comencem amb la de **"accés a objectes"**.
 
-![2](imatges/SPRINT5P2/2.png)  
+<img width="676" height="464" alt="image" src="https://github.com/user-attachments/assets/852a6872-70e4-4364-b512-dfa8b835f2dd" />
+
 
 
 ---
@@ -33,7 +35,7 @@ Podem establir que cada política només es registri en cas d’**error**, d’*
 Per fer un seguiment complet d’accessos i esdeveniments, activem totes les opcions marcades:
 
 
-![3](imatges/SPRINT5P2/3.png)  
+<img width="674" height="409" alt="image" src="https://github.com/user-attachments/assets/acbb6995-fcd0-472e-9420-567fbc121907" />
 
 ---
 
@@ -41,7 +43,8 @@ Per fer un seguiment complet d’accessos i esdeveniments, activem totes les opc
 
 A l'apartat **Seguretat** del Visor d'esdeveniments, veurem els esdeveniments generats per la GPO. Per exemple, un procés acabat de manera abrupta amb l'**ID 4688**.
 
-![4](imatges/SPRINT5P2/4.png) 
+<img width="675" height="478" alt="image" src="https://github.com/user-attachments/assets/12e73b12-7e69-4c39-972d-a67678533041" />
+
 
 ---
 
