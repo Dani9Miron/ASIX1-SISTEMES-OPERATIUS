@@ -75,14 +75,18 @@ En aquest sprint veurem com configurar i administrar dominis en un entorn Window
 5. Revisa tots els passos i genera, si es vol, un script d’instal·lació.
 
 6. Finalitza la instal·lació. El servidor es reiniciarà i podràs iniciar sessió com a **Administrador del domini**.
-![13](imatges/SPRINT3P2/13.png)  
-![14](imatges/SPRINT3P2/14.png)  
-![15](imatges/SPRINT3P2/15.png)  
-![16](imatges/SPRINT3P2/16.png)  
-![17](imatges/SPRINT3P2/17.png)  
-![18](imatges/SPRINT3P2/18.png)  
-![19](imatges/SPRINT3P2/19.png)  
+<img width="638" height="470" alt="image" src="https://github.com/user-attachments/assets/94aff952-3d16-4e9f-b1f8-0a7a5f87af46" />
+ 
+<img width="636" height="466" alt="image" src="https://github.com/user-attachments/assets/c85bdc26-75c6-4dae-9eed-9374e2632f19" />
+ 
+<img width="646" height="475" alt="image" src="https://github.com/user-attachments/assets/510599af-da24-4adf-9d5e-f7e379a4158b" />
 
+<img width="631" height="473" alt="image" src="https://github.com/user-attachments/assets/f5b637af-4acc-47af-ad99-37d9082da9f7" />
+<img width="635" height="467" alt="image" src="https://github.com/user-attachments/assets/d6e15073-d305-41df-b760-5d95fc78ec0a" />
+
+<img width="636" height="481" alt="image" src="https://github.com/user-attachments/assets/a20adebb-ce78-44cf-81aa-16916c5a98e7" />
+
+<img width="245" height="32" alt="image" src="https://github.com/user-attachments/assets/7248ecc8-1702-45b0-8b8b-505cfecaac96" />
 
 
 ## Unió d’equips al domini
@@ -99,13 +103,19 @@ En aquest sprint veurem com configurar i administrar dominis en un entorn Window
 5. Selecciona l’opció **Membre del domini** i escriu el nom del domini.
 
 6. Rebràs un missatge de confirmació i s’haurà de **reiniciar** el client.
-![20](imatges/SPRINT3P2/20.png) 
-![21](imatges/SPRINT3P2/21.png)  
-![22](imatges/SPRINT3P2/22.png)  
-![23](imatges/SPRINT3P2/23.png)  
-![24](imatges/SPRINT3P2/24.png)  
-![25](imatges/SPRINT3P2/25.png)  
-![26](imatges/SPRINT3P2/26.png) 
+<img width="629" height="376" alt="image" src="https://github.com/user-attachments/assets/af37802e-96aa-466a-a786-5f2911dea1bd" />
+<img width="547" height="201" alt="image" src="https://github.com/user-attachments/assets/5447a588-0530-46ce-b92b-5667a78db4c2" />
+ 
+<img width="478" height="211" alt="image" src="https://github.com/user-attachments/assets/9ca0bcff-a701-4eb7-aa71-438947a6b3b9" />
+
+<img width="407" height="475" alt="image" src="https://github.com/user-attachments/assets/2ec5e2d7-43fa-4b51-aa44-67961479eeba" />
+
+<img width="319" height="385" alt="image" src="https://github.com/user-attachments/assets/3fedc8e4-636d-4e1c-927e-e49f4a1e20ce" />
+
+<img width="326" height="148" alt="image" src="https://github.com/user-attachments/assets/ed4a3f30-e0f8-42a8-ad87-c23009fa5bc6" />
+
+<img width="530" height="310" alt="image" src="https://github.com/user-attachments/assets/f20f7803-82ba-41d6-87d5-4bf369260173" />
+
 
 ## Gestió d’Usuaris
 
@@ -117,12 +127,18 @@ En aquest sprint veurem com configurar i administrar dominis en un entorn Window
 
 4. Un cop creat, des del client, a la pantalla d’inici de sessió selecciona **Altres usuaris** i escriu les credencials creades.
 
-![26](imatges/SPRINT3P2/26.png) 
-![27](imatges/SPRINT3P2/27.png)  
-![28](imatges/SPRINT3P2/28.png)  
-![29](imatges/SPRINT3P2/29.png)  
-![30](imatges/SPRINT3P2/30.png)
-![31](imatges/SPRINT3P2/31.png)   
+<img width="514" height="267" alt="image" src="https://github.com/user-attachments/assets/b6923d6a-f3c6-4bb5-99ee-39d8822453f2" />
+
+<img width="667" height="493" alt="image" src="https://github.com/user-attachments/assets/163446f8-064f-4817-8950-778f841adb3f" />
+ 
+<img width="438" height="382" alt="image" src="https://github.com/user-attachments/assets/36bcaf4a-5655-41bd-b511-3b6f4d0cb12e" />
+
+<img width="436" height="373" alt="image" src="https://github.com/user-attachments/assets/4a7d4698-e851-4cf2-a56a-390cf2ff648d" />
+
+<img width="666" height="461" alt="image" src="https://github.com/user-attachments/assets/c0149157-24fb-424d-90a2-e094fe3ad7fc" />
+
+<img width="671" height="546" alt="image" src="https://github.com/user-attachments/assets/6d8b265b-51f3-43e0-9542-5584cc49f919" />
+  
 ## Hores d’inici de sessió
 
 Es poden definir horaris en què cada usuari pot iniciar sessió. Aquesta funcionalitat permet controlar que només treballin en horari laboral.
@@ -130,9 +146,12 @@ Es poden definir horaris en què cada usuari pot iniciar sessió. Aquesta funcio
 - Es configura des del perfil d’usuari dins de **Active Directory Users and Computers**.
 - Si s’intenta iniciar sessió fora d’hores, no es permet l'accés.
 
-![32](imatges/SPRINT3P2/32.png)  
-![33](imatges/SPRINT3P2/33.png)  
-![34](imatges/SPRINT3P2/34.png) 
+<img width="446" height="527" alt="image" src="https://github.com/user-attachments/assets/144590da-62b5-4c11-ab88-dfc6f21203b1" />
+
+<img width="526" height="312" alt="image" src="https://github.com/user-attachments/assets/6a7f2a6f-cfb7-476b-8982-900a77da61ae" />
+
+<img width="667" height="499" alt="image" src="https://github.com/user-attachments/assets/a7fb30ec-61af-48cd-81c7-3894a1ed4e7a" />
+
 
 ## Creació i gestió de grups
 
@@ -142,10 +161,14 @@ Es poden definir horaris en què cada usuari pot iniciar sessió. Aquesta funcio
 
 3. Assignem un **usuari com a administrador del grup** des de la pestanya “Administrado por”.
 
-![35](imatges/SPRINT3P2/35.png)  
-![36](imatges/SPRINT3P2/36.png)  
-![37](imatges/SPRINT3P2/37.png)  
-![38](imatges/SPRINT3P2/38.png)  
+<img width="436" height="368" alt="image" src="https://github.com/user-attachments/assets/787d5365-c343-4616-87cc-47f3ed2670cc" />
+
+<img width="427" height="447" alt="image" src="https://github.com/user-attachments/assets/9b587c0d-d442-4d99-8b7c-74d640f4eed1" />
+
+<img width="550" height="445" alt="image" src="https://github.com/user-attachments/assets/d06a9cc5-f068-4536-9b7f-f9aae97f191c" />
+
+<img width="426" height="447" alt="image" src="https://github.com/user-attachments/assets/c59cfcf0-9010-47a8-9298-1f7641d53b3c" />
+
 
 
 ## Accés remot a internet (NAT)
@@ -166,12 +189,17 @@ Per tal que el client pugui accedir a internet a través del servidor, configure
 
 
 
- ![39](imatges/SPRINT3P2/39.png) 
-![40](imatges/SPRINT3P2/40.png)  
-![41](imatges/SPRINT3P2/41.png)  
-![42](imatges/SPRINT3P2/42.png)  
-![43](imatges/SPRINT3P2/43.png)  
-![44](imatges/SPRINT3P2/44.png)
+<img width="664" height="472" alt="image" src="https://github.com/user-attachments/assets/52be49ab-8ae3-4893-a541-ec3188d18b10" />
+
+<img width="665" height="471" alt="image" src="https://github.com/user-attachments/assets/2ccc3ac4-f894-45dd-9358-c8b73345ae60" />
+
+<img width="651" height="491" alt="image" src="https://github.com/user-attachments/assets/4e8064c5-1698-4bdc-a9ca-df451dd97d25" />
+<img width="602" height="415" alt="image" src="https://github.com/user-attachments/assets/525c4a33-dc3a-456b-bc3e-f3b915aa70b4" />
+
+<img width="498" height="468" alt="image" src="https://github.com/user-attachments/assets/ce7bb18a-6b6d-47fe-b3c0-03ab8bed539a" />
+
+<img width="489" height="474" alt="image" src="https://github.com/user-attachments/assets/94eaa3e5-b871-4490-9695-e925d714ab98" />
+
 
 # Unitats Organitzatives (UO) i GPOs en Active Directory
 
@@ -202,10 +230,14 @@ https://learn.microsoft.com/es-es/entra/identity/domain-services/create-ou
 Un cop creada, pots:
 - Afegir-hi usuaris nous
 - Moure-hi usuaris existents per fer proves
-![45](imatges/SPRINT3P2/45.png)
-![46](imatges/SPRINT3P2/46.png)
-![47](imatges/SPRINT3P2/47.png)
-![48](imatges/SPRINT3P2/48.png)
+<img width="664" height="456" alt="image" src="https://github.com/user-attachments/assets/0c75eeb5-6c79-4893-9c6e-7d69b5331c80" />
+
+<img width="428" height="373" alt="image" src="https://github.com/user-attachments/assets/13c791a5-ce60-4ae8-8bc7-daa36bd45535" />
+
+<img width="533" height="215" alt="image" src="https://github.com/user-attachments/assets/ac11904f-fedf-4fc1-9bdc-eaa4dbcf3859" />
+
+<img width="513" height="256" alt="image" src="https://github.com/user-attachments/assets/48e2221a-ad0d-4a49-9c18-ffcedbff77fd" />
+
 
 ## Què és una GPO?
 
@@ -228,15 +260,25 @@ https://learn.microsoft.com/es-es/windows-server/identity/ad-ds/manage/group-pol
 5. Un cop creat, pots editar-lo:
    - Clic dret > Edita
    - Defineix polítiques com desactivar el panell de control, restringir accessos, etc.
-![49](imatges/SPRINT3P2/49.png)
-![50](imatges/SPRINT3P2/50.png)
-![52](imatges/SPRINT3P2/52.png)
-![53](imatges/SPRINT3P2/53.png)
-![54](imatges/SPRINT3P2/54.png)
-![55](imatges/SPRINT3P2/55.png)
-![56](imatges/SPRINT3P2/56.png)
-![57](imatges/SPRINT3P2/57.png)
-![58](imatges/SPRINT3P2/58.png)
+<img width="631" height="421" alt="image" src="https://github.com/user-attachments/assets/493aa878-1553-421d-9002-bc06d5842b42" />
+
+<img width="546" height="238" alt="image" src="https://github.com/user-attachments/assets/e5f27d80-88b5-4439-80ee-f6b4857907da" />
+
+<img width="408" height="497" alt="image" src="https://github.com/user-attachments/assets/3fd3dc8d-f6ed-4bf1-9e14-da08ff1e4829" />
+
+<img width="639" height="153" alt="image" src="https://github.com/user-attachments/assets/ba7388fe-15fc-4a0a-9953-45f04c0335ae" />
+
+<img width="633" height="385" alt="image" src="https://github.com/user-attachments/assets/84771062-31ce-4dc0-a2c5-d85358c600fe" />
+
+<img width="637" height="434" alt="image" src="https://github.com/user-attachments/assets/2664c1b2-27aa-4a08-ad15-811a63f921c9" />
+
+
+<img width="642" height="266" alt="image" src="https://github.com/user-attachments/assets/9bad2205-14d2-4946-9e04-2878dddab707" />
+
+<img width="330" height="186" alt="image" src="https://github.com/user-attachments/assets/dc5f295d-1932-488a-b078-339e9e03eb78" />
+
+<img width="548" height="127" alt="image" src="https://github.com/user-attachments/assets/052328a2-c76a-498e-bf2f-2d0027dd209f" />
+
 
 ## Recomanació
 
