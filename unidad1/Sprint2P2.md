@@ -5,26 +5,37 @@ En aquest segon sprint aprendrem a configurar usuaris i grups, controlar permiso
 
 
 Primer afegirem un disc nou per fer proves. A la pestanya d’emmagatzematge n’afegim un i, un cop arranquem Windows, obrim el gestor de discs. Crearem dues particions: una en format **NTFS** que es dirà **Dades**, i una altra en **FAT32** que es dirà **Portable**.
-![1]()  
-![2]()  
-![3]()  
-![4]()  
+<img width="670" height="410" alt="image" src="https://github.com/user-attachments/assets/601afb65-a84d-4ff8-90ad-ddb57ed1a420" />
+
+<img width="493" height="381" alt="image" src="https://github.com/user-attachments/assets/177fc718-ca3f-43c3-9970-57b1bdcf612f" />
+<img width="498" height="387" alt="image" src="https://github.com/user-attachments/assets/932dbd6d-c8ca-4217-ba98-a4a32f8803ed" />
+ 
+<img width="643" height="157" alt="image" src="https://github.com/user-attachments/assets/a5661f31-d40b-40ed-95f2-866a9d04af73" />
+
 
 Per comprovar-les, obrim CMD i fem servir la comanda `diskpart` per llistar els discos i volums i veure si estan ben creats.
-![5]() 
+<img width="352" height="492" alt="image" src="https://github.com/user-attachments/assets/37c89f48-c41d-4e54-8975-f34c6decbb82" />
+
 
 Després, anem a l’explorador d’arxius, cliquem amb el botó dret al disc **Dades** i obrim les propietats. A la pestanya “Quota” entrem a la configuració, activem les quotes i limitem l'espai a **300MB** amb un avís a **290MB**. També podem evitar que es passi del límit i activar el registre. Si tot va bé, sortirà una llum verda indicant que està tot correcte.
-![6]()  
-![7]()  
-![8]() 
+<img width="358" height="446" alt="image" src="https://github.com/user-attachments/assets/304fa633-3cdb-4cdb-896d-ed74f05c21c9" />
+<img width="360" height="441" alt="image" src="https://github.com/user-attachments/assets/30dbf1b7-942f-40b8-9d83-add07cbbfd97" />
+ 
+<img width="456" height="508" alt="image" src="https://github.com/user-attachments/assets/0edd3575-8f1f-47be-bf0f-297b875bb5ef" />
+
 
 A continuació, crearem els usuaris. Obrim “cuentas de usuario” i a les opcions avançades entrem a **lusrmgr**, on creem dos usuaris: **alumne1** i **alumne2**. Després anem als grups, creem un que es digui **Limitats** i hi afegim els dos alumnes.
-![9]()  
-![10]()  
-![11]()  
-![12]()  
-![13]()  
-![14]() 
+<img width="589" height="388" alt="image" src="https://github.com/user-attachments/assets/3de19912-05db-4b50-b6cf-f7667092d1f9" />
+<img width="662" height="448" alt="image" src="https://github.com/user-attachments/assets/751d3533-f5bd-4452-a2e7-6c3581816248" />
+
+
+<img width="585" height="200" alt="image" src="https://github.com/user-attachments/assets/6914de7f-0489-492d-8a41-448e4c788c60" />
+ 
+<img width="412" height="391" alt="image" src="https://github.com/user-attachments/assets/cfe28592-cf90-471f-ac23-ba980d7b7709" />
+
+<img width="549" height="388" alt="image" src="https://github.com/user-attachments/assets/319e3c6b-6c80-4ddc-b862-d32927d6e8f9" />
+
+
 Comprovem que podem iniciar sessió amb ells. Per fer una prova, amb **alumne1** intentem passar-nos de la quota del disc **D**. Ens avisa que ens hem passat, però com que ho vam permetre, ens deixa continuar.
 ![15]() 
 
