@@ -30,25 +30,35 @@ A continuació, crearem els usuaris. Obrim “cuentas de usuario” i a les opci
 
 
 <img width="585" height="200" alt="image" src="https://github.com/user-attachments/assets/6914de7f-0489-492d-8a41-448e4c788c60" />
- 
+
+ <img width="603" height="426" alt="image" src="https://github.com/user-attachments/assets/f8e26b37-ef42-40dd-8079-e08efdeb0944" />
+
 <img width="412" height="391" alt="image" src="https://github.com/user-attachments/assets/cfe28592-cf90-471f-ac23-ba980d7b7709" />
 
 <img width="549" height="388" alt="image" src="https://github.com/user-attachments/assets/319e3c6b-6c80-4ddc-b862-d32927d6e8f9" />
 
 
 Comprovem que podem iniciar sessió amb ells. Per fer una prova, amb **alumne1** intentem passar-nos de la quota del disc **D**. Ens avisa que ens hem passat, però com que ho vam permetre, ens deixa continuar.
-![15]() 
+<img width="249" height="414" alt="image" src="https://github.com/user-attachments/assets/17094d85-ee4a-4c01-b818-b6235fbac613" />
+
 
 Ara afegim un altre disc de **10GB**, el formategem en **NTFS** i l’anomenem **Backups**. A dins hi creem una carpeta que es digui **CòpiesUsuaris** (millor no posar accents per evitar errors).
 
 Crearem un script `.bat` que copiï les carpetes dels usuaris dins **CòpiesUsuaris**. El fem amb el Bloc de notes i el guardem amb extensió `.bat`. Important: encara que el Windows estigui en castellà o un altre idioma, les rutes han de portar **Users** i no **Usuarios**.
-![17]()  
-![18]()
-![19]()  
-![20]()  
-![21]()  
-![22]()  
-![23]()
+<img width="664" height="408" alt="image" src="https://github.com/user-attachments/assets/d0d5f3ee-3f8f-4f67-bee8-086ed317db8b" />
+
+<img width="489" height="394" alt="image" src="https://github.com/user-attachments/assets/8ad3248c-bb7b-4bc4-9168-393637c5390e" />
+
+<img width="359" height="332" alt="image" src="https://github.com/user-attachments/assets/492677f6-e8c4-4f55-9c4a-a29bc5fd2819" />
+
+<img width="352" height="326" alt="image" src="https://github.com/user-attachments/assets/99f39c7d-9f2c-4680-ad2a-f3962c7657ef" />
+
+<img width="373" height="267" alt="image" src="https://github.com/user-attachments/assets/84fdb010-cd49-4165-a982-c0bd9d012545" />
+ 
+<img width="605" height="464" alt="image" src="https://github.com/user-attachments/assets/bbae08a3-3f5c-4022-ba23-5e48f6bd70f7" />
+
+<img width="348" height="147" alt="image" src="https://github.com/user-attachments/assets/b91682a2-26f1-4542-9ab7-804ac32276b2" />
+
 
 Provem el script amb l’usuari administrador i veiem que les carpetes es creen bé. Ara volem que el script s’executi cada vegada que un usuari inicia sessió. Obrim **gpedit**, anem a la configuració de Windows -> Scripts -> Inici de sessió, i afegim el script allà.
 
